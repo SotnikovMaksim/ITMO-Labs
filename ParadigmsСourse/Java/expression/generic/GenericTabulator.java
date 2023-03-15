@@ -4,7 +4,7 @@ import expression.exceptions.*;
 import java.math.BigInteger;
 
 public class GenericTabulator implements Tabulator {
-    // :NOTE: лушче сделать x2, y2, z2, чтобы потом не писать this
+    
     private int x1, x;
     private int y1, y;
     private int z1, z;
@@ -38,7 +38,7 @@ public class GenericTabulator implements Tabulator {
         this.z1 = z1;
         this.z = z2 - z1 + 1;
         Object[][][] res = new Object[x][y][z];
-        // :NOTE: смотрим подсказки идеи
+
         if (mode.equals("i")) {
             GenericADT<Integer> gen = new GenericInt();
             ExpressionParser<Integer> parser = new ExpressionParser<>(gen);
