@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TranslatorTester" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-12-26T14:44:07" hostname="MacBook-Pro-6.local" time="0.337">
+  <properties/>
+  <testcase name="testSimpleLogic()" classname="TranslatorTester" time="0.247"/>
+  <testcase name="testFunctionDefinition()" classname="TranslatorTester" time="0.043"/>
+  <testcase name="testVariableDefinition()" classname="TranslatorTester" time="0.046"/>
+  <system-out><![CDATA[Generated Java code written to: samples/testSimpleLogic/Actual.java
+Compilation successful.
+Generated Java code written to: samples/testFunctionDefinition/Actual.java
+Compilation successful.
+Generated Java code written to: samples/testVariableDefinition/Actual.java
+Compilation successful.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

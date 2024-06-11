@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaseUnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-26T12:56:50" hostname="MacBook-Pro-6.local" time="0.015">
+  <properties/>
+  <testcase name="testBaseThrowingExpressions()" classname="BaseUnitTest" time="0.01"/>
+  <testcase name="testBaseNonThrowingExpressions()" classname="BaseUnitTest" time="0.004"/>
+  <system-out><![CDATA[a
+ab
+a|b
+a*
+a**
+a*****
+(a|b)*****
+(a)
+(a|b)*
+(ab)*
+(a|b)c
+a(b|c)
+a(b|c)*
+(a|b)*c
+a|b|c
+(a|bc)*
+abc|a*b
+(a|b)*(c|d)
+((abc)*|a)*
+((a|b)c)*
+(a|(b|c)*)*
+((a*b|ac)d|(e|f))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

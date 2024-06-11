@@ -1,0 +1,15 @@
+Configuring wl-pprint-annotated-0.1.0.1...
+Preprocessing library for wl-pprint-annotated-0.1.0.1..
+Building library for wl-pprint-annotated-0.1.0.1..
+[1 of 2] Compiling Paths_wl_pprint_annotated
+[2 of 2] Compiling Text.PrettyPrint.Annotated.WL
+
+src/Text/PrettyPrint/Annotated/WL.hs:143:1: warning: [-Wunused-imports]
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()
+    |
+143 | import Data.Semigroup
+    | ^^^^^^^^^^^^^^^^^^^^^
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/wl-pprint-annotated-0.1.0.1-21rcgOfxKMi94B7JXcoiMs
+Registering library for wl-pprint-annotated-0.1.0.1..

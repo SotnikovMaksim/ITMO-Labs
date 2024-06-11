@@ -1,0 +1,6 @@
+Configuring type-equality-1...
+Preprocessing library for type-equality-1..
+Building library for type-equality-1..
+[1 of 1] Compiling Data.Type.Equality.Hetero
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/type-equality-1-Cz1XtPhQ9oP187QHwC5KWz
+Registering library for type-equality-1..

@@ -1,0 +1,30 @@
+Configuring tasty-1.4.2.1...
+Preprocessing library for tasty-1.4.2.1..
+Building library for tasty-1.4.2.1..
+[ 1 of 25] Compiling Control.Concurrent.Async
+[ 2 of 25] Compiling Test.Tasty.Options
+[ 3 of 25] Compiling Test.Tasty.Parallel
+[ 4 of 25] Compiling Test.Tasty.Patterns.Expr
+[ 5 of 25] Compiling Test.Tasty.Patterns.Types
+[ 6 of 25] Compiling Test.Tasty.Patterns.Printer
+[ 7 of 25] Compiling Test.Tasty.Patterns.Parser
+[ 8 of 25] Compiling Test.Tasty.Patterns.Eval
+[ 9 of 25] Compiling Test.Tasty.Patterns
+[10 of 25] Compiling Test.Tasty.Options.Core
+[11 of 25] Compiling Test.Tasty.Providers.ConsoleFormat
+[12 of 25] Compiling Test.Tasty.Core
+[13 of 25] Compiling Test.Tasty.Providers
+[14 of 25] Compiling Test.Tasty.Runners.Reducers
+[15 of 25] Compiling Test.Tasty.Runners.Utils
+[16 of 25] Compiling Test.Tasty.Run
+[17 of 25] Compiling Test.Tasty.Ingredients
+[18 of 25] Compiling Test.Tasty.Options.Env
+[19 of 25] Compiling Test.Tasty.Ingredients.ListTests
+[20 of 25] Compiling Test.Tasty.Ingredients.IncludingOptions
+[21 of 25] Compiling Test.Tasty.Ingredients.ConsoleReporter
+[22 of 25] Compiling Test.Tasty.Ingredients.Basic
+[23 of 25] Compiling Test.Tasty.CmdLine
+[24 of 25] Compiling Test.Tasty.Runners
+[25 of 25] Compiling Test.Tasty
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/tasty-1.4.2.1-2nXZnmafqTyG0D9LohbSXA
+Registering library for tasty-1.4.2.1..

@@ -1,0 +1,6 @@
+Configuring tasty-quickcheck-0.10.2...
+Preprocessing library for tasty-quickcheck-0.10.2..
+Building library for tasty-quickcheck-0.10.2..
+[1 of 1] Compiling Test.Tasty.QuickCheck
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/tasty-quickcheck-0.10.2-EWgj7AMtlRbEbf3OIShggn
+Registering library for tasty-quickcheck-0.10.2..

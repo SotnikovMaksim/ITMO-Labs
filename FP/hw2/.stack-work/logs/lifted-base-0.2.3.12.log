@@ -1,0 +1,14 @@
+Configuring lifted-base-0.2.3.12...
+Preprocessing library for lifted-base-0.2.3.12..
+Building library for lifted-base-0.2.3.12..
+[1 of 9] Compiling Control.Concurrent.Chan.Lifted
+[2 of 9] Compiling Control.Concurrent.MVar.Lifted
+[3 of 9] Compiling Control.Concurrent.QSem.Lifted
+[4 of 9] Compiling Control.Concurrent.QSemN.Lifted
+[5 of 9] Compiling Control.Exception.Lifted
+[6 of 9] Compiling Control.Concurrent.Lifted
+[7 of 9] Compiling Data.IORef.Lifted
+[8 of 9] Compiling Foreign.Marshal.Utils.Lifted
+[9 of 9] Compiling System.Timeout.Lifted
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/lifted-base-0.2.3.12-HhDEk2jUv0J2SSxyr8rCgA
+Registering library for lifted-base-0.2.3.12..

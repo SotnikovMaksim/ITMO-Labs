@@ -1,0 +1,46 @@
+Configuring optparse-applicative-0.16.1.0...
+Preprocessing library for optparse-applicative-0.16.1.0..
+Building library for optparse-applicative-0.16.1.0..
+[ 1 of 17] Compiling Options.Applicative.Help.Levenshtein
+[ 2 of 17] Compiling Options.Applicative.Help.Pretty
+
+src/Options/Applicative/Help/Pretty.hs:9:1: warning: [-Wunused-imports]
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()
+  |
+9 | import           Data.Semigroup ((<>))
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[ 3 of 17] Compiling Options.Applicative.Help.Chunk
+[ 4 of 17] Compiling Options.Applicative.Help.Types
+[ 5 of 17] Compiling Options.Applicative.Types
+[ 6 of 17] Compiling Options.Applicative.NonEmpty
+[ 7 of 17] Compiling Options.Applicative.Internal
+[ 8 of 17] Compiling Options.Applicative.Common
+[ 9 of 17] Compiling Options.Applicative.Help.Core
+
+src/Options/Applicative/Help/Core.hs:26:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+   |
+26 | import Data.Monoid (mempty)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/Options/Applicative/Help/Core.hs:27:1: warning: [-Wunused-imports]
+    The import of ‘Data.Semigroup’ is redundant
+      except perhaps to import instances from ‘Data.Semigroup’
+    To import instances alone, use: import Data.Semigroup()
+   |
+27 | import Data.Semigroup (Semigroup (..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[10 of 17] Compiling Options.Applicative.Help
+[11 of 17] Compiling Options.Applicative.Builder.Internal
+[12 of 17] Compiling Options.Applicative.Builder.Completer
+[13 of 17] Compiling Options.Applicative.Builder
+[14 of 17] Compiling Options.Applicative.BashCompletion
+[15 of 17] Compiling Options.Applicative.Extra
+[16 of 17] Compiling Options.Applicative
+[17 of 17] Compiling Options.Applicative.Arrows
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/optparse-applicative-0.16.1.0-J9pe7lIyD46z3hHrAJC9C
+Registering library for optparse-applicative-0.16.1.0..

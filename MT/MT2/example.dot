@@ -1,0 +1,21 @@
+digraph G {
+  node [shape=plain, fontname="Arial"];
+
+    E1 -> P1;
+    P1 -> A1;
+    A1 -> S1;
+    S1 -> a1;
+    A1 -> Aterm1;
+    Aterm1 -> eps1;
+    P1 -> Pterm1;
+    Pterm1 -> vert1;
+    Pterm1 -> A2;
+    A2 -> A3;
+    A3 -> S2;
+    S2 -> b3;
+    A3 -> Aterm2;
+    Aterm2 -> eps2;
+    E1 -> E2;
+    E2 -> eps3;
+
+}

@@ -1,0 +1,6 @@
+Configuring wcwidth-0.0.2...
+Preprocessing library for wcwidth-0.0.2..
+Building library for wcwidth-0.0.2..
+[1 of 1] Compiling Data.Char.WCWidth
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/wcwidth-0.0.2-BXjgwcQuCYt63tIsFKTAWA
+Registering library for wcwidth-0.0.2..

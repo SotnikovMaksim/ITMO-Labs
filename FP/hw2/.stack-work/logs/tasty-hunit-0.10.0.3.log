@@ -1,0 +1,8 @@
+Configuring tasty-hunit-0.10.0.3...
+Preprocessing library for tasty-hunit-0.10.0.3..
+Building library for tasty-hunit-0.10.0.3..
+[1 of 3] Compiling Test.Tasty.HUnit.Orig
+[2 of 3] Compiling Test.Tasty.HUnit.Steps
+[3 of 3] Compiling Test.Tasty.HUnit
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/tasty-hunit-0.10.0.3-2pk0zBp0GH8HDWq4Drt9FD
+Registering library for tasty-hunit-0.10.0.3..

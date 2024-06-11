@@ -1,0 +1,32 @@
+grammar Calculator;
+
+< 'Double' | '0.0' >
+
+e : t eState[t.value] {res.value = eState.value;};
+
+eState <Double count> :
+    PLUS t eState[count + t.value] {res.value = eState.value;}
+    | MINUS t eState[count - t.value] {res.value = eState.value;}
+    | EPS {res.value = count;};
+
+t : f tState[f.value] {res.value = tState.value;};
+
+tState <Double count> :
+    MULT f tState[count * f.value] {res.value = tState.value;}
+    | DIV f tState[count / f.value] {res.value = tState.value;}
+    | EPS {res.value = count;};
+
+f :
+    LP e {res.value = e.value;} RP
+    | MINUS t eState[0 - t.value] {res.value = eState.value;}
+    | FLOAT {res.value = Double.valueOf(FLOAT.tokenValue);}
+    | INT {res.value = Double.valueOf(INT.tokenValue);};
+
+PLUS    : '\\+'      ;
+MINUS   : '-'        ;
+MULT    : '\\*'      ;
+DIV     : '/'        ;
+LP      : '\\('      ;
+RP      : '\\)'      ;
+FLOAT   : '[0-9]+[.][0-9]+';
+INT     : '[0-9]+'   ;

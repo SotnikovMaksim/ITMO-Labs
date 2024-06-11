@@ -1,0 +1,24 @@
+Configuring happy-1.20.0...
+Preprocessing executable 'happy' for happy-1.20.0..
+Building executable 'happy' for happy-1.20.0..
+[ 1 of 19] Compiling AbsSyn
+[ 2 of 19] Compiling GenUtils
+[ 3 of 19] Compiling NameSet
+[ 4 of 19] Compiling ParamRules
+[ 5 of 19] Compiling ParseMonad
+[ 6 of 19] Compiling Lexer
+[ 7 of 19] Compiling AttrGrammar
+[ 8 of 19] Compiling AttrGrammarParser
+[ 9 of 19] Compiling Grammar
+[10 of 19] Compiling LALR
+[11 of 19] Compiling First
+[12 of 19] Compiling Parser
+[13 of 19] Compiling Paths_happy
+[14 of 19] Compiling Info
+[15 of 19] Compiling PrettyGrammar
+[16 of 19] Compiling ProduceGLRCode
+[17 of 19] Compiling Target
+[18 of 19] Compiling ProduceCode
+[19 of 19] Compiling Main
+Linking .stack-work/dist/x86_64-osx/ghc-8.10.7/build/happy/happy ...
+Installing executable happy in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/bin

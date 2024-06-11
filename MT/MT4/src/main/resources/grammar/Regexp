@@ -1,0 +1,19 @@
+grammar Regexp;
+
+< 'String' | '""' >
+
+e : p e | EPS;
+
+p : a pState;
+pState : PIPE p | EPS;
+
+a : s aState;
+aState: AST | EPS;
+
+s : LP e RP | VAR;
+
+PIPE: '\\|'  ;
+AST : '\\*'  ;
+LP  : '\\('  ;
+RP  : '\\)'  ;
+VAR : '[a-z]';

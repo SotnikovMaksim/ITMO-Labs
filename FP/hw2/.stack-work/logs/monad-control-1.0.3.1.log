@@ -1,0 +1,6 @@
+Configuring monad-control-1.0.3.1...
+Preprocessing library for monad-control-1.0.3.1..
+Building library for monad-control-1.0.3.1..
+[1 of 1] Compiling Control.Monad.Trans.Control
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/monad-control-1.0.3.1-5pNnCK6kVuG7SXDLJdwBXs
+Registering library for monad-control-1.0.3.1..

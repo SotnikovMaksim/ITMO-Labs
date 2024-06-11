@@ -1,0 +1,11 @@
+Configuring smallcheck-1.2.1...
+Preprocessing library for smallcheck-1.2.1..
+Building library for smallcheck-1.2.1..
+[1 of 6] Compiling Test.SmallCheck.Property.Result
+[2 of 6] Compiling Test.SmallCheck.SeriesMonad
+[3 of 6] Compiling Test.SmallCheck.Series
+[4 of 6] Compiling Test.SmallCheck.Property
+[5 of 6] Compiling Test.SmallCheck.Drivers
+[6 of 6] Compiling Test.SmallCheck
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/smallcheck-1.2.1-74YQP27yLww2svMLUdT29f
+Registering library for smallcheck-1.2.1..

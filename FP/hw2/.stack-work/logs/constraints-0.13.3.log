@@ -1,0 +1,12 @@
+Configuring constraints-0.13.3...
+Preprocessing library for constraints-0.13.3..
+Building library for constraints-0.13.3..
+[1 of 7] Compiling Data.Constraint
+[2 of 7] Compiling Data.Constraint.Deferrable
+[3 of 7] Compiling Data.Constraint.Forall
+[4 of 7] Compiling Data.Constraint.Lifting
+[5 of 7] Compiling Data.Constraint.Nat
+[6 of 7] Compiling Data.Constraint.Symbol
+[7 of 7] Compiling Data.Constraint.Unsafe
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/constraints-0.13.3-DbncjtfrRjILjlRL1iIRqT
+Registering library for constraints-0.13.3..

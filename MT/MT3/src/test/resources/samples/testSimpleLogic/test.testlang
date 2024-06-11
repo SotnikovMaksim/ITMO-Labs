@@ -1,0 +1,4 @@
+(defn isEven (num) (if (== (% num 2) 0) (print "Even") (print "Odd")))
+
+(isEven 4)
+(isEven 1)

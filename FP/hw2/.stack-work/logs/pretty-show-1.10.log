@@ -1,0 +1,30 @@
+Configuring pretty-show-1.10...
+Preprocessing library for pretty-show-1.10..
+Building library for pretty-show-1.10..
+[1 of 6] Compiling Paths_pretty_show
+[2 of 6] Compiling Text.Show.Value
+[3 of 6] Compiling Text.Show.PrettyVal
+[4 of 6] Compiling Text.Show.Parser
+[5 of 6] Compiling Text.Show.Html
+
+Text/Show/Html.hs:112:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘tallTuple’
+    |
+112 | tallTuple els = table "tallTuple" $ map (tr . return . td) els
+    | ^^^^^^^^^
+[6 of 6] Compiling Text.Show.Pretty
+
+Text/Show/Pretty.hs:52:1: warning: [-Wunused-imports]
+    The import of ‘Foldable’ from module ‘Data.Foldable’ is redundant
+   |
+52 | import Data.Foldable(Foldable,toList)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Preprocessing executable 'ppsh' for pretty-show-1.10..
+Building executable 'ppsh' for pretty-show-1.10..
+[1 of 2] Compiling Main
+[2 of 2] Compiling Paths_pretty_show
+Linking .stack-work/dist/x86_64-osx/ghc-8.10.7/build/ppsh/ppsh ...
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/pretty-show-1.10-LZeo5mRYHWT4tzUcUDlJ7N
+Installing executable ppsh in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/bin
+Registering library for pretty-show-1.10..
+t move temporary file: /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/bin/ppsh.strip to input file: /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/bin/ppsh (No such file or directory)

@@ -1,0 +1,14 @@
+/Users/mac/.stack/programs/x86_64-osx/ghc-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/.stack-work/dist/x86_64-osx/ghc-8.10.7/build/task-4/autogen/Paths_hw2.hs:
+  hash: 0631869e36b47d99d8ed1d1fbd748dbfcbbbffe7e0faa5d9e93c9dc0b7d00899
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/.stack-work/dist/x86_64-osx/ghc-8.10.7/build/task-4/autogen/cabal_macros.h:
+  hash: 8e74ab5f991c88a40c3c9ca4dfdb7d90c73fe57656e8d356059586e3250f0402
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/hw2.cabal:
+  hash: d48fe0c9d86d9d1e32400a3e485b94c78f652777333236827136dd8d01812162
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/package.yaml:
+  hash: 894d7b005e2b96f46789fa5096b653c624d15a720fecde6287dac511b9c4300c
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/test/T4/Spec.hs:
+  hash: a796467bf5b5cecaa1635e7c5112d647d9c694bf8d9073fa6a3fa0e53b2630e5
+/Users/mac/JetBrains_Projects/IdeaProjects/hw2/test/T4/TestSuit.hs:
+  hash: 7773894a603f686e0298e1cee3272a3eeb9e51593be587f6a0fbc53b29d0e8ca

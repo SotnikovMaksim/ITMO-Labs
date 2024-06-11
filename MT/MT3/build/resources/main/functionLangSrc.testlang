@@ -1,0 +1,7 @@
+(defn gcd (a b) (if (== b 0) (return a) (return (gcd b (% a b)))))
+
+(defn mod (a b) (return (% a b)))
+
+(gcd 1023 858)
+
+(print (mod 10 5))

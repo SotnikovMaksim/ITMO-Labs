@@ -1,0 +1,7 @@
+(def a 1)
+
+(def b 3.14)
+
+(def c "Hello world!")
+
+(def d [1 2 3 ])

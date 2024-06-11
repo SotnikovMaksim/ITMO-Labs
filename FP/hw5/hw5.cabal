@@ -1,0 +1,329 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           hw5
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/hw5#readme>
+homepage:       https://github.com/SotnikovMaksim/hw5#readme
+bug-reports:    https://github.com/SotnikovMaksim/hw5/issues
+author:         Sotnikov Maksim
+maintainer:     alone.sotnikov@mail.ru
+copyright:      2023 Sotnikov Maksim
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/SotnikovMaksim/hw5
+
+library
+  exposed-modules:
+      HW5.Action
+      HW5.Base
+      HW5.Evaluator
+      HW5.Parser
+      HW5.Pretty
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , bits
+    , bytestring
+    , containers
+    , directory
+    , megaparsec
+    , mtl
+    , parser-combinators
+    , prettyprinter
+    , prettyprinter-ansi-terminal
+    , random
+    , scientific
+    , serialise
+    , template-haskell
+    , text
+    , time
+    , transformers
+    , zlib
+  default-language: Haskell2010
+
+executable hi
+  main-is: Main.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , haskeline
+    , hw5
+    , megaparsec
+  default-language: Haskell2010
+
+test-suite T1
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T1
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-incomplete-patterns -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hedgehog
+    , hspec
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , tasty
+    , tasty-hedgehog
+    , tasty-hspec
+    , tasty-hunit
+    , tasty-quickcheck
+    , tasty-smallcheck
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T10
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T10
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-unused-do-bind -Wno-overlapping-patterns -Wno-unused-local-binds
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T11
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T11
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-unused-do-bind -Wno-overlapping-patterns -Wno-unused-local-binds -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T2
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T2
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T3
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T3
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T4
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T4
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T5
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T5
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T6
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T6
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-orphans
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T7
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T7
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-unused-do-bind -Wno-overlapping-patterns -Wno-unused-local-binds
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T8
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T8
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-unused-do-bind -Wno-overlapping-patterns -Wno-unused-local-binds
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite T9
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_hw5
+  hs-source-dirs:
+      baseTests/T9
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -Wno-unused-imports -Wno-unused-top-binds -Wno-type-defaults -Wno-missing-signatures -Wno-name-shadowing -Wno-unused-matches -Wno-unused-do-bind -Wno-overlapping-patterns -Wno-unused-local-binds
+  build-depends:
+      QuickCheck
+    , base
+    , bytestring
+    , containers
+    , directory
+    , hw5
+    , megaparsec
+    , prettyprinter
+    , template-haskell
+    , text
+    , time
+    , transformers
+  default-language: Haskell2010

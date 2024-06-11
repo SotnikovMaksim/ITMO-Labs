@@ -1,0 +1,11 @@
+Configuring concurrent-output-1.10.15...
+Preprocessing library for concurrent-output-1.10.15..
+Building library for concurrent-output-1.10.15..
+[1 of 6] Compiling Utility.Exception
+[2 of 6] Compiling Utility.Monad
+[3 of 6] Compiling System.Console.Concurrent.Internal
+[4 of 6] Compiling System.Console.Concurrent
+[5 of 6] Compiling System.Process.Concurrent
+[6 of 6] Compiling System.Console.Regions
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/concurrent-output-1.10.15-B9dhzJPufoz5vnQezTUGQZ
+Registering library for concurrent-output-1.10.15..

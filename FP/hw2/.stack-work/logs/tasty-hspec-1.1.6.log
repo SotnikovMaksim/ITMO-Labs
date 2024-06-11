@@ -1,0 +1,14 @@
+Configuring tasty-hspec-1.1.6...
+Preprocessing library for tasty-hspec-1.1.6..
+Building library for tasty-hspec-1.1.6..
+[1 of 1] Compiling Test.Tasty.Hspec
+
+src/Test/Tasty/Hspec.hs:22:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+   |
+22 | import Control.Applicative ((<$>))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/tasty-hspec-1.1.6-rMoqcxGEpZF8dD6ALe7Bo
+Registering library for tasty-hspec-1.1.6..

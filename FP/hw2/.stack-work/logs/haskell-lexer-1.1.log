@@ -1,0 +1,5046 @@
+Configuring haskell-lexer-1.1...
+Preprocessing library for haskell-lexer-1.1..
+Building library for haskell-lexer-1.1..
+[1 of 6] Compiling Language.Haskell.Lexer.Position
+[2 of 6] Compiling Language.Haskell.Lexer.Tokens
+[3 of 6] Compiling Language.Haskell.Lexer.Layout
+[4 of 6] Compiling Language.Haskell.Lexer.Utils
+[5 of 6] Compiling Language.Haskell.Lexer.Lex
+
+Language/Haskell/Lexer/Lex.hs:122:5: warning: [-Wname-shadowing]
+    This binding for ‘c’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:19:8
+    |
+122 |     c | isAscii c -> 0
+    |     ^
+
+Language/Haskell/Lexer/Lex.hs:131:26: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:131:8
+    |
+131 | start1 is = state1 (\ as is -> gotError as is) "" is
+    |                          ^^
+
+Language/Haskell/Lexer/Lex.hs:133:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+133 | state1 err as [] = gotEOF as
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:194:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+194 | state2 err as [] = err as []
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:195:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:194:8
+    |
+195 |   where err _ _ = output Whitespace as (start1 [])
+    |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:196:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+196 | state2 err as iis@(i:is) =
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:205:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:196:8
+    |
+205 |   where err _ _ = output Whitespace as (start1 iis)
+    |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:208:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+208 | state4 err as [] = err as []
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:209:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:208:8
+    |
+209 |   where err _ _ = output Varsym as (start1 [])
+    |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:210:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+210 | state4 err as iis@(i:is) =
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:227:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:210:8
+    |
+227 |   where err _ _ = output Varsym as (start1 iis)
+    |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:230:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start5’
+    |
+230 | start5 is = state5 (\ as is -> gotError as is) "" is
+    | ^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:230:26: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:230:8
+    |
+230 | start5 is = state5 (\ as is -> gotError as is) "" is
+    |                          ^^
+
+Language/Haskell/Lexer/Lex.hs:246:8: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+246 | state6 err as is = output StringLit as (start1 is)
+    |        ^^^
+
+Language/Haskell/Lexer/Lex.hs:249:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start7’
+    |
+249 | start7 is = state7 (\ as is -> gotError as is) "" is
+    | ^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:249:26: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:249:8
+    |
+249 | start7 is = state7 (\ as is -> gotError as is) "" is
+    |                          ^^
+
+Language/Haskell/Lexer/Lex.hs:295:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start8’
+    |
+295 | start8 is = state8 (\ as is -> gotError as is) "" is
+    | ^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:295:26: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:295:8
+    |
+295 | start8 is = state8 (\ as is -> gotError as is) "" is
+    |                          ^^
+
+Language/Haskell/Lexer/Lex.hs:310:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start10’
+    |
+310 | start10 is = state10 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:310:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:310:9
+    |
+310 | start10 is = state10 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:330:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start12’
+    |
+330 | start12 is = state12 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:330:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:330:9
+    |
+330 | start12 is = state12 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:339:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start13’
+    |
+339 | start13 is = state13 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:339:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:339:9
+    |
+339 | start13 is = state13 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:348:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start14’
+    |
+348 | start14 is = state14 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:348:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:348:9
+    |
+348 | start14 is = state14 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:358:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start15’
+    |
+358 | start15 is = state15 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:358:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:358:9
+    |
+358 | start15 is = state15 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:367:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start16’
+    |
+367 | start16 is = state16 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:367:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:367:9
+    |
+367 | start16 is = state16 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:377:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start17’
+    |
+377 | start17 is = state17 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:377:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:377:9
+    |
+377 | start17 is = state17 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:386:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start18’
+    |
+386 | start18 is = state18 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:386:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:386:9
+    |
+386 | start18 is = state18 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:397:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start19’
+    |
+397 | start19 is = state19 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:397:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:397:9
+    |
+397 | start19 is = state19 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:406:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start20’
+    |
+406 | start20 is = state20 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:406:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:406:9
+    |
+406 | start20 is = state20 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:415:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start21’
+    |
+415 | start21 is = state21 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:415:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:415:9
+    |
+415 | start21 is = state21 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:428:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start22’
+    |
+428 | start22 is = state22 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:428:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:428:9
+    |
+428 | start22 is = state22 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:437:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start23’
+    |
+437 | start23 is = state23 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:437:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:437:9
+    |
+437 | start23 is = state23 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:446:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start24’
+    |
+446 | start24 is = state24 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:446:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:446:9
+    |
+446 | start24 is = state24 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:455:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start25’
+    |
+455 | start25 is = state25 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:455:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:455:9
+    |
+455 | start25 is = state25 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:465:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start26’
+    |
+465 | start26 is = state26 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:465:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:465:9
+    |
+465 | start26 is = state26 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:475:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start27’
+    |
+475 | start27 is = state27 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:475:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:475:9
+    |
+475 | start27 is = state27 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:484:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start28’
+    |
+484 | start28 is = state28 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:484:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:484:9
+    |
+484 | start28 is = state28 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:493:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start29’
+    |
+493 | start29 is = state29 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:493:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:493:9
+    |
+493 | start29 is = state29 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:503:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start30’
+    |
+503 | start30 is = state30 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:503:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:503:9
+    |
+503 | start30 is = state30 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:516:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start32’
+    |
+516 | start32 is = state32 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:516:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:516:9
+    |
+516 | start32 is = state32 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:525:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start33’
+    |
+525 | start33 is = state33 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:525:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:525:9
+    |
+525 | start33 is = state33 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:534:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start34’
+    |
+534 | start34 is = state34 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:534:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:534:9
+    |
+534 | start34 is = state34 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:571:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start35’
+    |
+571 | start35 is = state35 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:571:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:571:9
+    |
+571 | start35 is = state35 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:582:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start36’
+    |
+582 | start36 is = state36 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:582:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:582:9
+    |
+582 | start36 is = state36 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:601:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start38’
+    |
+601 | start38 is = state38 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:601:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:601:9
+    |
+601 | start38 is = state38 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:625:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start39’
+    |
+625 | start39 is = state39 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:625:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:625:9
+    |
+625 | start39 is = state39 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:657:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start41’
+    |
+657 | start41 is = state41 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:657:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:657:9
+    |
+657 | start41 is = state41 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:673:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start42’
+    |
+673 | start42 is = state42 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:673:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:673:9
+    |
+673 | start42 is = state42 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:682:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+    |
+682 | state43 err as is = output CharLit as (start1 is)
+    |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:685:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start44’
+    |
+685 | start44 is = state44 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:685:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:685:9
+    |
+685 | start44 is = state44 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:725:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start45’
+    |
+725 | start45 is = state45 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:725:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:725:9
+    |
+725 | start45 is = state45 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:738:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start46’
+    |
+738 | start46 is = state46 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:738:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:738:9
+    |
+738 | start46 is = state46 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:747:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start47’
+    |
+747 | start47 is = state47 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:747:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:747:9
+    |
+747 | start47 is = state47 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:756:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start48’
+    |
+756 | start48 is = state48 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:756:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:756:9
+    |
+756 | start48 is = state48 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:766:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start49’
+    |
+766 | start49 is = state49 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:766:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:766:9
+    |
+766 | start49 is = state49 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:775:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start50’
+    |
+775 | start50 is = state50 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:775:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:775:9
+    |
+775 | start50 is = state50 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:785:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start51’
+    |
+785 | start51 is = state51 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:785:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:785:9
+    |
+785 | start51 is = state51 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:794:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start52’
+    |
+794 | start52 is = state52 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:794:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:794:9
+    |
+794 | start52 is = state52 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:805:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start53’
+    |
+805 | start53 is = state53 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:805:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:805:9
+    |
+805 | start53 is = state53 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:814:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start54’
+    |
+814 | start54 is = state54 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:814:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:814:9
+    |
+814 | start54 is = state54 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:823:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start55’
+    |
+823 | start55 is = state55 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:823:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:823:9
+    |
+823 | start55 is = state55 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:836:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start56’
+    |
+836 | start56 is = state56 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:836:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:836:9
+    |
+836 | start56 is = state56 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:845:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start57’
+    |
+845 | start57 is = state57 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:845:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:845:9
+    |
+845 | start57 is = state57 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:854:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start58’
+    |
+854 | start58 is = state58 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:854:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:854:9
+    |
+854 | start58 is = state58 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:863:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start59’
+    |
+863 | start59 is = state59 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:863:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:863:9
+    |
+863 | start59 is = state59 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:873:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start60’
+    |
+873 | start60 is = state60 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:873:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:873:9
+    |
+873 | start60 is = state60 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:883:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start61’
+    |
+883 | start61 is = state61 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:883:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:883:9
+    |
+883 | start61 is = state61 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:892:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start62’
+    |
+892 | start62 is = state62 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:892:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:892:9
+    |
+892 | start62 is = state62 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:901:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start63’
+    |
+901 | start63 is = state63 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:901:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:901:9
+    |
+901 | start63 is = state63 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:911:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start64’
+    |
+911 | start64 is = state64 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:911:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:911:9
+    |
+911 | start64 is = state64 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:924:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start65’
+    |
+924 | start65 is = state65 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:924:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:924:9
+    |
+924 | start65 is = state65 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:934:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start66’
+    |
+934 | start66 is = state66 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:934:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:934:9
+    |
+934 | start66 is = state66 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:943:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start67’
+    |
+943 | start67 is = state67 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:943:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:943:9
+    |
+943 | start67 is = state67 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:952:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start68’
+    |
+952 | start68 is = state68 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:952:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:952:9
+    |
+952 | start68 is = state68 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:989:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start69’
+    |
+989 | start69 is = state69 (\ as is -> gotError as is) "" is
+    | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:989:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:989:9
+    |
+989 | start69 is = state69 (\ as is -> gotError as is) "" is
+    |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1000:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start70’
+     |
+1000 | start70 is = state70 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1000:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1000:9
+     |
+1000 | start70 is = state70 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1012:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start71’
+     |
+1012 | start71 is = state71 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1012:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1012:9
+     |
+1012 | start71 is = state71 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1036:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start72’
+     |
+1036 | start72 is = state72 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1036:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1036:9
+     |
+1036 | start72 is = state72 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1061:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1061 | state73 err as is = output Special as (start1 is)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1064:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1064 | state74 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1065:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1064:9
+     |
+1065 |   where err _ _ = output Varsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1066:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1066 | state74 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1083:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1066:9
+     |
+1083 |   where err _ _ = output Varsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1086:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1086 | state75 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1087:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1086:9
+     |
+1087 |   where err _ _ = output Commentstart as (start76 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1088:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1088 | state75 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1105:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1088:9
+     |
+1105 |   where err _ _ = output Commentstart as (start76 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1108:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1108:9
+     |
+1108 | start76 is = state76 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1121:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1121 | state77 err as is = output Comment as (start1 is)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1124:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1124 | state78 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1125:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1124:9
+     |
+1125 |   where err _ _ = output Comment as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1126:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1126 | state78 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1130:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1126:9
+     |
+1130 |   where err _ _ = output Comment as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1133:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1133 | state79 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1134:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1133:9
+     |
+1134 |   where err _ _ = output Reservedop as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1135:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1135 | state79 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1152:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1135:9
+     |
+1152 |   where err _ _ = output Reservedop as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1155:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1155 | state80 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1156:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1155:9
+     |
+1156 |   where err _ _ = output Varsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1157:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1157 | state80 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1174:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1157:9
+     |
+1174 |   where err _ _ = output Varsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1177:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1177 | state81 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1178:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1177:9
+     |
+1178 |   where err _ _ = output IntLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1179:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1179 | state81 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1191:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1179:9
+     |
+1191 |   where err _ _ = output IntLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1194:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start82’
+     |
+1194 | start82 is = state82 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1194:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1194:9
+     |
+1194 | start82 is = state82 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1206:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1206 | state83 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1207:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1206:9
+     |
+1207 |   where err _ _ = output FloatLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1208:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1208 | state83 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1217:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1208:9
+     |
+1217 |   where err _ _ = output FloatLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1220:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start84’
+     |
+1220 | start84 is = state84 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1220:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1220:9
+     |
+1220 | start84 is = state84 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1234:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start85’
+     |
+1234 | start85 is = state85 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1234:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1234:9
+     |
+1234 | start85 is = state85 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1246:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1246 | state86 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1247:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1246:9
+     |
+1247 |   where err _ _ = output FloatLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1248:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1248 | state86 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1255:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1248:9
+     |
+1255 |   where err _ _ = output FloatLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1258:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1258 | state87 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1259:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1258:9
+     |
+1259 |   where err _ _ = output IntLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1260:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1260 | state87 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1268:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1260:9
+     |
+1268 |   where err _ _ = output IntLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1271:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start88’
+     |
+1271 | start88 is = state88 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1271:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1271:9
+     |
+1271 | start88 is = state88 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1282:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1282 | state89 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1283:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1282:9
+     |
+1283 |   where err _ _ = output IntLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1284:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1284 | state89 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1290:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1284:9
+     |
+1290 |   where err _ _ = output IntLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1293:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start90’
+     |
+1293 | start90 is = state90 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1293:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1293:9
+     |
+1293 | start90 is = state90 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1317:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1317 | state91 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1318:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1317:9
+     |
+1318 |   where err _ _ = output IntLit as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1319:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1319 | state91 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1338:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1319:9
+     |
+1338 |   where err _ _ = output IntLit as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1341:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1341 | state92 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1342:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1341:9
+     |
+1342 |   where err _ _ = output Reservedop as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1343:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1343 | state92 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1360:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1343:9
+     |
+1360 |   where err _ _ = output Reservedop as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1363:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1363 | state93 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1364:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1363:9
+     |
+1364 |   where err _ _ = output Consym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1365:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1365 | state93 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1382:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1365:9
+     |
+1382 |   where err _ _ = output Consym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1385:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1385 | state94 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1386:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1385:9
+     |
+1386 |   where err _ _ = output Reservedop as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1387:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1387 | state94 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1404:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1387:9
+     |
+1404 |   where err _ _ = output Reservedop as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1407:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1407 | state95 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1408:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1407:9
+     |
+1408 |   where err _ _ = output Varsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1409:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1409 | state95 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1426:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1409:9
+     |
+1426 |   where err _ _ = output Varsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1429:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1429 | state96 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1430:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1429:9
+     |
+1430 |   where err _ _ = output Reservedop as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1431:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1431 | state96 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1448:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1431:9
+     |
+1448 |   where err _ _ = output Reservedop as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1451:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1451 | state97 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1452:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1451:9
+     |
+1452 |   where err _ _ = output Conid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1453:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1453 | state97 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1482:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1453:9
+     |
+1482 |   where err _ _ = output Conid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1485:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start98’
+     |
+1485 | start98 is = state98 (\ as is -> gotError as is) "" is
+     | ^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1485:28: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1485:9
+     |
+1485 | start98 is = state98 (\ as is -> gotError as is) "" is
+     |                            ^^
+
+Language/Haskell/Lexer/Lex.hs:1548:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1548 | state99 err as [] = err as []
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1549:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1548:9
+     |
+1549 |   where err _ _ = output Qvarsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1550:9: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1550 | state99 err as iis@(i:is) =
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1567:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1550:9
+     |
+1567 |   where err _ _ = output Qvarsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1570:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1570 | state100 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1571:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1570:10
+     |
+1571 |   where err _ _ = output Qvarsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1572:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1572 | state100 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1589:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1572:10
+     |
+1589 |   where err _ _ = output Qvarsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1592:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start101’
+     |
+1592 | start101 is = state101 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1592:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1592:10
+     |
+1592 | start101 is = state101 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1614:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start102’
+     |
+1614 | start102 is = state102 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1614:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1614:10
+     |
+1614 | start102 is = state102 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1636:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1636 | state103 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1637:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1636:10
+     |
+1637 |   where err _ _ = output Qvarsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1638:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1638 | state103 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1655:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1638:10
+     |
+1655 |   where err _ _ = output Qvarsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1658:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start104’
+     |
+1658 | start104 is = state104 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1658:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1658:10
+     |
+1658 | start104 is = state104 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1680:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1680 | state105 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1681:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1680:10
+     |
+1681 |   where err _ _ = output Qconsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1682:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1682 | state105 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1699:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1682:10
+     |
+1699 |   where err _ _ = output Qconsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1702:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start106’
+     |
+1702 | start106 is = state106 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1702:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1702:10
+     |
+1702 | start106 is = state106 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1724:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1724 | state107 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1725:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1724:10
+     |
+1725 |   where err _ _ = output Qvarsym as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1726:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1726 | state107 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1743:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1726:10
+     |
+1743 |   where err _ _ = output Qvarsym as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1746:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start108’
+     |
+1746 | start108 is = state108 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1746:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1746:10
+     |
+1746 | start108 is = state108 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1768:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1768 | state109 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1769:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1768:10
+     |
+1769 |   where err _ _ = output Qconid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1770:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1770 | state109 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1799:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1770:10
+     |
+1799 |   where err _ _ = output Qconid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1802:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start110’
+     |
+1802 | start110 is = state110 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:1802:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1802:10
+     |
+1802 | start110 is = state110 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:1836:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1836 | state111 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1837:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1836:10
+     |
+1837 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1838:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1838 | state111 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1867:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1838:10
+     |
+1867 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1870:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1870 | state112 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1871:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1870:10
+     |
+1871 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1872:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1872 | state112 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1903:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1872:10
+     |
+1903 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1906:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1906 | state113 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1907:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1906:10
+     |
+1907 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1908:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1908 | state113 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1938:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1908:10
+     |
+1938 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1941:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1941 | state114 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1942:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1941:10
+     |
+1942 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1943:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1943 | state114 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1973:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1943:10
+     |
+1973 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1976:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1976 | state115 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:1977:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1976:10
+     |
+1977 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:1978:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+1978 | state115 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2008:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:1978:10
+     |
+2008 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2011:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2011 | state116 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2012:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2011:10
+     |
+2012 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2013:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2013 | state116 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2043:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2013:10
+     |
+2043 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2046:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2046 | state117 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2047:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2046:10
+     |
+2047 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2048:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2048 | state117 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2078:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2048:10
+     |
+2078 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2081:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2081 | state118 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2082:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2081:10
+     |
+2082 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2083:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2083 | state118 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2115:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2083:10
+     |
+2115 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2118:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2118 | state119 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2119:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2118:10
+     |
+2119 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2120:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2120 | state119 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2150:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2120:10
+     |
+2150 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2153:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2153 | state120 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2154:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2153:10
+     |
+2154 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2155:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2155 | state120 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2185:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2155:10
+     |
+2185 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2188:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2188 | state121 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2189:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2188:10
+     |
+2189 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2190:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2190 | state121 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2221:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2190:10
+     |
+2221 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2224:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2224 | state122 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2225:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2224:10
+     |
+2225 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2226:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2226 | state122 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2256:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2226:10
+     |
+2256 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2259:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2259 | state123 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2260:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2259:10
+     |
+2260 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2261:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2261 | state123 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2291:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2261:10
+     |
+2291 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2294:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2294 | state124 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2295:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2294:10
+     |
+2295 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2296:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2296 | state124 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2326:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2296:10
+     |
+2326 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2329:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2329 | state125 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2330:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2329:10
+     |
+2330 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2331:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2331 | state125 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2361:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2331:10
+     |
+2361 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2364:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2364 | state126 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2365:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2364:10
+     |
+2365 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2366:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2366 | state126 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2396:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2366:10
+     |
+2396 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2399:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2399 | state127 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2400:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2399:10
+     |
+2400 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2401:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2401 | state127 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2431:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2401:10
+     |
+2431 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2434:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2434 | state128 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2435:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2434:10
+     |
+2435 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2436:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2436 | state128 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2466:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2436:10
+     |
+2466 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2469:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2469 | state129 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2470:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2469:10
+     |
+2470 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2471:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2471 | state129 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2501:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2471:10
+     |
+2501 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2504:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2504 | state130 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2505:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2504:10
+     |
+2505 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2506:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2506 | state130 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2536:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2506:10
+     |
+2536 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2539:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2539 | state131 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2540:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2539:10
+     |
+2540 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2541:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2541 | state131 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2571:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2541:10
+     |
+2571 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2574:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2574 | state132 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2575:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2574:10
+     |
+2575 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2576:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2576 | state132 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2608:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2576:10
+     |
+2608 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2611:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2611 | state133 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2612:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2611:10
+     |
+2612 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2613:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2613 | state133 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2643:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2613:10
+     |
+2643 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2646:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2646 | state134 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2647:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2646:10
+     |
+2647 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2648:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2648 | state134 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2678:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2648:10
+     |
+2678 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2681:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2681 | state135 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2682:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2681:10
+     |
+2682 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2683:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2683 | state135 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2713:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2683:10
+     |
+2713 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2716:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start136’
+     |
+2716 | start136 is = state136 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:2716:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2716:10
+     |
+2716 | start136 is = state136 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:2752:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2752 | state137 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2753:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2752:10
+     |
+2753 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2754:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2754 | state137 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2784:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2754:10
+     |
+2784 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2787:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2787 | state138 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2788:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2787:10
+     |
+2788 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2789:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2789 | state138 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2819:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2789:10
+     |
+2819 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2822:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start139’
+     |
+2822 | start139 is = state139 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:2822:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2822:10
+     |
+2822 | start139 is = state139 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:2858:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2858 | state140 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2859:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2858:10
+     |
+2859 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2860:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2860 | state140 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2890:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2860:10
+     |
+2890 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2893:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2893 | state141 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2894:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2893:10
+     |
+2894 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2895:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2895 | state141 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2925:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2895:10
+     |
+2925 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2928:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2928 | state142 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2929:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2928:10
+     |
+2929 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2930:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2930 | state142 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2960:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2930:10
+     |
+2960 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2963:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2963 | state143 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2964:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2963:10
+     |
+2964 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2965:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2965 | state143 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2995:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2965:10
+     |
+2995 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:2998:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+2998 | state144 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:2999:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:2998:10
+     |
+2999 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3000:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3000 | state144 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3030:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3000:10
+     |
+3030 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3033:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3033 | state145 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3034:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3033:10
+     |
+3034 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3035:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3035 | state145 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3065:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3035:10
+     |
+3065 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3068:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3068 | state146 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3069:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3068:10
+     |
+3069 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3070:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3070 | state146 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3100:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3070:10
+     |
+3100 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3103:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3103 | state147 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3104:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3103:10
+     |
+3104 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3105:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3105 | state147 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3135:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3105:10
+     |
+3135 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3138:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3138 | state148 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3139:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3138:10
+     |
+3139 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3140:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3140 | state148 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3170:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3140:10
+     |
+3170 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3173:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3173 | state149 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3174:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3173:10
+     |
+3174 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3175:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3175 | state149 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3205:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3175:10
+     |
+3205 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3208:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3208 | state150 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3209:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3208:10
+     |
+3209 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3210:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3210 | state150 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3240:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3210:10
+     |
+3240 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3243:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3243 | state151 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3244:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3243:10
+     |
+3244 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3245:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3245 | state151 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3275:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3245:10
+     |
+3275 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3278:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3278 | state152 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3279:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3278:10
+     |
+3279 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3280:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3280 | state152 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3310:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3280:10
+     |
+3310 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3313:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3313 | state153 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3314:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3313:10
+     |
+3314 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3315:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3315 | state153 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3345:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3315:10
+     |
+3345 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3348:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3348 | state154 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3349:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3348:10
+     |
+3349 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3350:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3350 | state154 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3380:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3350:10
+     |
+3380 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3383:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3383 | state155 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3384:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3383:10
+     |
+3384 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3385:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3385 | state155 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3416:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3385:10
+     |
+3416 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3419:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3419 | state156 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3420:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3419:10
+     |
+3420 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3421:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3421 | state156 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3451:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3421:10
+     |
+3451 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3454:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3454 | state157 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3455:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3454:10
+     |
+3455 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3456:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3456 | state157 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3486:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3456:10
+     |
+3486 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3489:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3489 | state158 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3490:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3489:10
+     |
+3490 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3491:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3491 | state158 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3521:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3491:10
+     |
+3521 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3524:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3524 | state159 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3525:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3524:10
+     |
+3525 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3526:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3526 | state159 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3556:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3526:10
+     |
+3556 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3559:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3559 | state160 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3560:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3559:10
+     |
+3560 |   where err _ _ = output Qvarid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3561:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3561 | state160 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3591:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3561:10
+     |
+3591 |   where err _ _ = output Qvarid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3594:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3594 | state161 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3595:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3594:10
+     |
+3595 |   where err _ _ = output Special as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3596:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3596 | state161 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3647:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3596:10
+     |
+3647 |   where err _ _ = output Special as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:3650:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start162’
+     |
+3650 | start162 is = state162 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3650:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3650:10
+     |
+3650 | start162 is = state162 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3684:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start163’
+     |
+3684 | start163 is = state163 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3684:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3684:10
+     |
+3684 | start163 is = state163 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3740:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start164’
+     |
+3740 | start164 is = state164 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3740:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3740:10
+     |
+3740 | start164 is = state164 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3774:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start165’
+     |
+3774 | start165 is = state165 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3774:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3774:10
+     |
+3774 | start165 is = state165 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3808:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start166’
+     |
+3808 | start166 is = state166 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3808:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3808:10
+     |
+3808 | start166 is = state166 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3818:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start169’
+     |
+3818 | start169 is = state169 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3818:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3818:10
+     |
+3818 | start169 is = state169 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3829:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+3829 | state172 err as is = output QQuote as (start1 is)
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:3832:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start173’
+     |
+3832 | start173 is = state173 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3832:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3832:10
+     |
+3832 | start173 is = state173 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3868:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start174’
+     |
+3868 | start174 is = state174 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3868:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3868:10
+     |
+3868 | start174 is = state174 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3903:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start175’
+     |
+3903 | start175 is = state175 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3903:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3903:10
+     |
+3903 | start175 is = state175 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3938:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start176’
+     |
+3938 | start176 is = state176 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3938:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3938:10
+     |
+3938 | start176 is = state176 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:3973:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start177’
+     |
+3973 | start177 is = state177 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:3973:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:3973:10
+     |
+3973 | start177 is = state177 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4008:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start178’
+     |
+4008 | start178 is = state178 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4008:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4008:10
+     |
+4008 | start178 is = state178 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4043:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start179’
+     |
+4043 | start179 is = state179 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4043:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4043:10
+     |
+4043 | start179 is = state179 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4080:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start180’
+     |
+4080 | start180 is = state180 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4080:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4080:10
+     |
+4080 | start180 is = state180 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4115:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start181’
+     |
+4115 | start181 is = state181 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4115:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4115:10
+     |
+4115 | start181 is = state181 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4150:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start182’
+     |
+4150 | start182 is = state182 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4150:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4150:10
+     |
+4150 | start182 is = state182 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4186:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start183’
+     |
+4186 | start183 is = state183 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4186:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4186:10
+     |
+4186 | start183 is = state183 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4221:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start184’
+     |
+4221 | start184 is = state184 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4221:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4221:10
+     |
+4221 | start184 is = state184 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4256:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start185’
+     |
+4256 | start185 is = state185 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4256:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4256:10
+     |
+4256 | start185 is = state185 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4291:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start186’
+     |
+4291 | start186 is = state186 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4291:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4291:10
+     |
+4291 | start186 is = state186 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4326:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start187’
+     |
+4326 | start187 is = state187 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4326:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4326:10
+     |
+4326 | start187 is = state187 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4361:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start188’
+     |
+4361 | start188 is = state188 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4361:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4361:10
+     |
+4361 | start188 is = state188 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4396:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start189’
+     |
+4396 | start189 is = state189 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4396:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4396:10
+     |
+4396 | start189 is = state189 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4431:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start190’
+     |
+4431 | start190 is = state190 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4431:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4431:10
+     |
+4431 | start190 is = state190 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4466:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start191’
+     |
+4466 | start191 is = state191 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4466:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4466:10
+     |
+4466 | start191 is = state191 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4501:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start192’
+     |
+4501 | start192 is = state192 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4501:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4501:10
+     |
+4501 | start192 is = state192 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4536:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start193’
+     |
+4536 | start193 is = state193 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4536:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4536:10
+     |
+4536 | start193 is = state193 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4573:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start194’
+     |
+4573 | start194 is = state194 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4573:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4573:10
+     |
+4573 | start194 is = state194 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4608:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start195’
+     |
+4608 | start195 is = state195 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4608:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4608:10
+     |
+4608 | start195 is = state195 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4643:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start196’
+     |
+4643 | start196 is = state196 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4643:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4643:10
+     |
+4643 | start196 is = state196 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4678:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start197’
+     |
+4678 | start197 is = state197 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4678:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4678:10
+     |
+4678 | start197 is = state197 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4714:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start198’
+     |
+4714 | start198 is = state198 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4714:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4714:10
+     |
+4714 | start198 is = state198 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4749:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start199’
+     |
+4749 | start199 is = state199 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4749:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4749:10
+     |
+4749 | start199 is = state199 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4784:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start200’
+     |
+4784 | start200 is = state200 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4784:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4784:10
+     |
+4784 | start200 is = state200 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4820:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start201’
+     |
+4820 | start201 is = state201 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4820:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4820:10
+     |
+4820 | start201 is = state201 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4855:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start202’
+     |
+4855 | start202 is = state202 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4855:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4855:10
+     |
+4855 | start202 is = state202 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4890:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start203’
+     |
+4890 | start203 is = state203 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4890:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4890:10
+     |
+4890 | start203 is = state203 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4925:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start204’
+     |
+4925 | start204 is = state204 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4925:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4925:10
+     |
+4925 | start204 is = state204 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4960:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start205’
+     |
+4960 | start205 is = state205 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4960:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4960:10
+     |
+4960 | start205 is = state205 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:4995:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start206’
+     |
+4995 | start206 is = state206 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:4995:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:4995:10
+     |
+4995 | start206 is = state206 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5030:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start207’
+     |
+5030 | start207 is = state207 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5030:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5030:10
+     |
+5030 | start207 is = state207 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5065:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start208’
+     |
+5065 | start208 is = state208 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5065:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5065:10
+     |
+5065 | start208 is = state208 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5100:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start209’
+     |
+5100 | start209 is = state209 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5100:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5100:10
+     |
+5100 | start209 is = state209 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5135:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start210’
+     |
+5135 | start210 is = state210 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5135:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5135:10
+     |
+5135 | start210 is = state210 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5170:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start211’
+     |
+5170 | start211 is = state211 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5170:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5170:10
+     |
+5170 | start211 is = state211 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5205:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start212’
+     |
+5205 | start212 is = state212 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5205:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5205:10
+     |
+5205 | start212 is = state212 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5240:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start213’
+     |
+5240 | start213 is = state213 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5240:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5240:10
+     |
+5240 | start213 is = state213 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5275:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start214’
+     |
+5275 | start214 is = state214 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5275:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5275:10
+     |
+5275 | start214 is = state214 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5310:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start215’
+     |
+5310 | start215 is = state215 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5310:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5310:10
+     |
+5310 | start215 is = state215 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5345:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start216’
+     |
+5345 | start216 is = state216 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5345:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5345:10
+     |
+5345 | start216 is = state216 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5381:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start217’
+     |
+5381 | start217 is = state217 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5381:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5381:10
+     |
+5381 | start217 is = state217 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5416:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start218’
+     |
+5416 | start218 is = state218 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5416:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5416:10
+     |
+5416 | start218 is = state218 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5451:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start219’
+     |
+5451 | start219 is = state219 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5451:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5451:10
+     |
+5451 | start219 is = state219 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5486:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start220’
+     |
+5486 | start220 is = state220 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5486:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5486:10
+     |
+5486 | start220 is = state220 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5521:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘start221’
+     |
+5521 | start221 is = state221 (\ as is -> gotError as is) "" is
+     | ^^^^^^^^
+
+Language/Haskell/Lexer/Lex.hs:5521:30: warning: [-Wname-shadowing]
+    This binding for ‘is’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5521:10
+     |
+5521 | start221 is = state221 (\ as is -> gotError as is) "" is
+     |                              ^^
+
+Language/Haskell/Lexer/Lex.hs:5556:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5556 | state222 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5557:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5556:10
+     |
+5557 |   where err _ _ = output Reservedid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5558:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5558 | state222 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5587:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5558:10
+     |
+5587 |   where err _ _ = output Reservedid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5590:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5590 | state223 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5591:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5590:10
+     |
+5591 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5592:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5592 | state223 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5621:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5592:10
+     |
+5621 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5624:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5624 | state224 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5625:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5624:10
+     |
+5625 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5626:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5626 | state224 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5657:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5626:10
+     |
+5657 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5660:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5660 | state225 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5661:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5660:10
+     |
+5661 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5662:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5662 | state225 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5692:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5662:10
+     |
+5692 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5695:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5695 | state226 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5696:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5695:10
+     |
+5696 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5697:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5697 | state226 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5727:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5697:10
+     |
+5727 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5730:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5730 | state227 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5731:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5730:10
+     |
+5731 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5732:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5732 | state227 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5762:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5732:10
+     |
+5762 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5765:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5765 | state228 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5766:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5765:10
+     |
+5766 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5767:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5767 | state228 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5797:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5767:10
+     |
+5797 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5800:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5800 | state229 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5801:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5800:10
+     |
+5801 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5802:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5802 | state229 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5832:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5802:10
+     |
+5832 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5835:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5835 | state230 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5836:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5835:10
+     |
+5836 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5837:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5837 | state230 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5869:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5837:10
+     |
+5869 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5872:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5872 | state231 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5873:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5872:10
+     |
+5873 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5874:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5874 | state231 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5904:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5874:10
+     |
+5904 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5907:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5907 | state232 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5908:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5907:10
+     |
+5908 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5909:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5909 | state232 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5939:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5909:10
+     |
+5939 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5942:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5942 | state233 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5943:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5942:10
+     |
+5943 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5944:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5944 | state233 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5975:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5944:10
+     |
+5975 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5978:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5978 | state234 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:5979:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5978:10
+     |
+5979 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:5980:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+5980 | state234 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6010:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:5980:10
+     |
+6010 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6013:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6013 | state235 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6014:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6013:10
+     |
+6014 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6015:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6015 | state235 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6045:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6015:10
+     |
+6045 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6048:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6048 | state236 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6049:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6048:10
+     |
+6049 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6050:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6050 | state236 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6080:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6050:10
+     |
+6080 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6083:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6083 | state237 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6084:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6083:10
+     |
+6084 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6085:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6085 | state237 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6115:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6085:10
+     |
+6115 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6118:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6118 | state238 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6119:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6118:10
+     |
+6119 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6120:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6120 | state238 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6150:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6120:10
+     |
+6150 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6153:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6153 | state239 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6154:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6153:10
+     |
+6154 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6155:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6155 | state239 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6185:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6155:10
+     |
+6185 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6188:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6188 | state240 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6189:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6188:10
+     |
+6189 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6190:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6190 | state240 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6220:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6190:10
+     |
+6220 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6223:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6223 | state241 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6224:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6223:10
+     |
+6224 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6225:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6225 | state241 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6255:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6225:10
+     |
+6255 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6258:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6258 | state242 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6259:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6258:10
+     |
+6259 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6260:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6260 | state242 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6290:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6260:10
+     |
+6290 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6293:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6293 | state243 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6294:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6293:10
+     |
+6294 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6295:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6295 | state243 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6325:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6295:10
+     |
+6325 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6328:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6328 | state244 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6329:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6328:10
+     |
+6329 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6330:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6330 | state244 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6362:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6330:10
+     |
+6362 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6365:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6365 | state245 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6366:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6365:10
+     |
+6366 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6367:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6367 | state245 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6397:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6367:10
+     |
+6397 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6400:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6400 | state246 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6401:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6400:10
+     |
+6401 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6402:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6402 | state246 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6432:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6402:10
+     |
+6432 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6435:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6435 | state247 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6436:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6435:10
+     |
+6436 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6437:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6437 | state247 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6467:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6437:10
+     |
+6467 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6470:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6470 | state248 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6471:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6470:10
+     |
+6471 |   where err _ _ = output Reservedid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6472:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6472 | state248 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6503:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6472:10
+     |
+6503 |   where err _ _ = output Reservedid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6506:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6506 | state249 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6507:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6506:10
+     |
+6507 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6508:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6508 | state249 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6538:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6508:10
+     |
+6538 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6541:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6541 | state250 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6542:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6541:10
+     |
+6542 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6543:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6543 | state250 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6573:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6543:10
+     |
+6573 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6576:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6576 | state251 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6577:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6576:10
+     |
+6577 |   where err _ _ = output Reservedid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6578:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6578 | state251 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6609:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6578:10
+     |
+6609 |   where err _ _ = output Reservedid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6612:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6612 | state252 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6613:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6612:10
+     |
+6613 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6614:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6614 | state252 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6644:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6614:10
+     |
+6644 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6647:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6647 | state253 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6648:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6647:10
+     |
+6648 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6649:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6649 | state253 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6679:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6649:10
+     |
+6679 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6682:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6682 | state254 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6683:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6682:10
+     |
+6683 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6684:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6684 | state254 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6714:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6684:10
+     |
+6714 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6717:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6717 | state255 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6718:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6717:10
+     |
+6718 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6719:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6719 | state255 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6749:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6719:10
+     |
+6749 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6752:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6752 | state256 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6753:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6752:10
+     |
+6753 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6754:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6754 | state256 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6784:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6754:10
+     |
+6784 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6787:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6787 | state257 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6788:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6787:10
+     |
+6788 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6789:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6789 | state257 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6819:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6789:10
+     |
+6819 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6822:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6822 | state258 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6823:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6822:10
+     |
+6823 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6824:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6824 | state258 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6854:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6824:10
+     |
+6854 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6857:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6857 | state259 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6858:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6857:10
+     |
+6858 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6859:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6859 | state259 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6889:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6859:10
+     |
+6889 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6892:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6892 | state260 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6893:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6892:10
+     |
+6893 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6894:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6894 | state260 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6924:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6894:10
+     |
+6924 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6927:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6927 | state261 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6928:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6927:10
+     |
+6928 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6929:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6929 | state261 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6959:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6929:10
+     |
+6959 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6962:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6962 | state262 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6963:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6962:10
+     |
+6963 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6964:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6964 | state262 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6994:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6964:10
+     |
+6994 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6997:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6997 | state263 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:6998:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6997:10
+     |
+6998 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:6999:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+6999 | state263 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7029:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:6999:10
+     |
+7029 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7032:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7032 | state264 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7033:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7032:10
+     |
+7033 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7034:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7034 | state264 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7064:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7034:10
+     |
+7064 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7067:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7067 | state265 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7068:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7067:10
+     |
+7068 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7069:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7069 | state265 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7099:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7069:10
+     |
+7099 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7102:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7102 | state266 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7103:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7102:10
+     |
+7103 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7104:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7104 | state266 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7134:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7104:10
+     |
+7134 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7137:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7137 | state267 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7138:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7137:10
+     |
+7138 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7139:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7139 | state267 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7170:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7139:10
+     |
+7170 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7173:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7173 | state268 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7174:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7173:10
+     |
+7174 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7175:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7175 | state268 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7205:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7175:10
+     |
+7205 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7208:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7208 | state269 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7209:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7208:10
+     |
+7209 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7210:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7210 | state269 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7240:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7210:10
+     |
+7240 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7243:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7243 | state270 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7244:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7243:10
+     |
+7244 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7245:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7245 | state270 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7275:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7245:10
+     |
+7275 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7278:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7278 | state271 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7279:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7278:10
+     |
+7279 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7280:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7280 | state271 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7310:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7280:10
+     |
+7310 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7313:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7313 | state272 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7314:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7313:10
+     |
+7314 |   where err _ _ = output Varid as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7315:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7315 | state272 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7345:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7315:10
+     |
+7345 |   where err _ _ = output Varid as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7348:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7348 | state273 err as [] = err as []
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7349:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7348:10
+     |
+7349 |   where err _ _ = output Special as (start1 [])
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7350:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7350 | state273 err as iis@(i:is) =
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7354:9: warning: [-Wname-shadowing]
+    This binding for ‘err’ shadows the existing binding
+      bound at Language/Haskell/Lexer/Lex.hs:7350:10
+     |
+7354 |   where err _ _ = output Special as (start1 iis)
+     |         ^^^
+
+Language/Haskell/Lexer/Lex.hs:7357:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7357 | state274 err as is = nestedComment as is state275
+     |          ^^^
+
+Language/Haskell/Lexer/Lex.hs:7360:10: warning: [-Wunused-matches]
+    Defined but not used: ‘err’
+     |
+7360 | state275 err as is = output NestedComment as (start1 is)
+     |          ^^^
+[6 of 6] Compiling Language.Haskell.Lexer
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/haskell-lexer-1.1-1mQPYdpJu8R7Q5yNaiGvIK
+Registering library for haskell-lexer-1.1..

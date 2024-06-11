@@ -1,0 +1,385 @@
+name: hw5
+version: 0.1.0.0
+github: "SotnikovMaksim/hw5"
+license: BSD3
+author: "Sotnikov Maksim"
+maintainer: "alone.sotnikov@mail.ru"
+copyright: "2023 Sotnikov Maksim"
+
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description: Please see the README on GitHub at <https://github.com/githubuser/hw5#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+library:
+  source-dirs: src
+  dependencies:
+    - megaparsec
+    - prettyprinter
+    - prettyprinter-ansi-terminal
+    - bytestring
+    - scientific
+    - parser-combinators
+    - text
+    - containers
+    - time
+    - random
+    - mtl
+    - transformers
+    - bits
+    - zlib
+    - serialise
+    - directory
+    - template-haskell
+
+executables:
+  hi:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - megaparsec
+      - haskeline
+      - containers
+      - hw5
+
+tests:
+  T1:
+    main: Spec.hs
+    source-dirs: baseTests/T1
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-incomplete-patterns
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hedgehog
+      - hspec
+      - tasty
+      - tasty-hedgehog
+      - tasty-quickcheck
+      - tasty-hunit
+      - tasty-smallcheck
+      - tasty-hspec
+      - hw5
+
+  T2:
+    main: Spec.hs
+    source-dirs: baseTests/T2
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T3:
+    main: Spec.hs
+    source-dirs: baseTests/T3
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T4:
+    main: Spec.hs
+    source-dirs: baseTests/T4
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T5:
+    main: Spec.hs
+    source-dirs: baseTests/T5
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T6:
+    main: Spec.hs
+    source-dirs: baseTests/T6
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T7:
+    main: Spec.hs
+    source-dirs: baseTests/T7
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-unused-do-bind
+      - -Wno-overlapping-patterns
+      - -Wno-unused-local-binds
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T8:
+    main: Spec.hs
+    source-dirs: baseTests/T8
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-unused-do-bind
+      - -Wno-overlapping-patterns
+      - -Wno-unused-local-binds
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T9:
+    main: Spec.hs
+    source-dirs: baseTests/T9
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-unused-do-bind
+      - -Wno-overlapping-patterns
+      - -Wno-unused-local-binds
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T10:
+    main: Spec.hs
+    source-dirs: baseTests/T10
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-unused-do-bind
+      - -Wno-overlapping-patterns
+      - -Wno-unused-local-binds
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5
+
+  T11:
+    main: Spec.hs
+    source-dirs: baseTests/T11
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -Wno-unused-imports
+      - -Wno-unused-top-binds
+      - -Wno-type-defaults
+      - -Wno-missing-signatures
+      - -Wno-name-shadowing
+      - -Wno-unused-matches
+      - -Wno-unused-do-bind
+      - -Wno-overlapping-patterns
+      - -Wno-unused-local-binds
+      - -Wno-orphans
+    dependencies:
+      - base
+      - containers
+      - transformers
+      - text
+      - bytestring
+      - directory
+      - template-haskell
+      - QuickCheck
+      - megaparsec
+      - prettyprinter
+      - time
+      - hw5

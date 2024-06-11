@@ -1,0 +1,31 @@
+Configuring hedgehog-1.0.5...
+Preprocessing library for hedgehog-1.0.5..
+Building library for hedgehog-1.0.5..
+[ 1 of 26] Compiling Hedgehog.Internal.Config
+[ 2 of 26] Compiling Hedgehog.Internal.Distributive
+[ 3 of 26] Compiling Hedgehog.Internal.Exception
+[ 4 of 26] Compiling Hedgehog.Internal.HTraversable
+[ 5 of 26] Compiling Hedgehog.Internal.Opaque
+[ 6 of 26] Compiling Hedgehog.Internal.Prelude
+[ 7 of 26] Compiling Hedgehog.Internal.Queue
+[ 8 of 26] Compiling Hedgehog.Internal.Range
+[ 9 of 26] Compiling Hedgehog.Internal.Region
+[10 of 26] Compiling Hedgehog.Internal.Seed
+[11 of 26] Compiling Hedgehog.Internal.Show
+[12 of 26] Compiling Hedgehog.Internal.Shrink
+[13 of 26] Compiling Hedgehog.Internal.Source
+[14 of 26] Compiling Hedgehog.Internal.Tree
+[15 of 26] Compiling Hedgehog.Main
+[16 of 26] Compiling Hedgehog.Range
+[17 of 26] Compiling Hedgehog.Internal.Gen
+[18 of 26] Compiling Hedgehog.Internal.Property
+[19 of 26] Compiling Hedgehog.Internal.Tripping
+[20 of 26] Compiling Hedgehog.Internal.State
+[21 of 26] Compiling Hedgehog.Internal.Discovery
+[22 of 26] Compiling Hedgehog.Internal.TH
+[23 of 26] Compiling Hedgehog.Internal.Report
+[24 of 26] Compiling Hedgehog.Internal.Runner
+[25 of 26] Compiling Hedgehog.Gen
+[26 of 26] Compiling Hedgehog
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/hedgehog-1.0.5-FTtkkJO6ZXn32wpPU783bE
+Registering library for hedgehog-1.0.5..

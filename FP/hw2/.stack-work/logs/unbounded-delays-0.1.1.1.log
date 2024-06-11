@@ -1,0 +1,7 @@
+Configuring unbounded-delays-0.1.1.1...
+Preprocessing library for unbounded-delays-0.1.1.1..
+Building library for unbounded-delays-0.1.1.1..
+[1 of 2] Compiling Control.Concurrent.Thread.Delay
+[2 of 2] Compiling Control.Concurrent.Timeout
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/unbounded-delays-0.1.1.1-9ugfrScBCwWAr0bImAb2NC
+Registering library for unbounded-delays-0.1.1.1..

@@ -1,0 +1,138 @@
+Configuring mmorph-1.1.5...
+Preprocessing library for mmorph-1.1.5..
+Building library for mmorph-1.1.5..
+[1 of 2] Compiling Control.Monad.Morph
+
+src/Control/Monad/Morph.hs:81:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+   |
+81 | import qualified Control.Monad.Trans.Error         as E
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:84:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Trans.List’ is deprecated:
+      This transformer is invalid on most monads
+   |
+84 | import qualified Control.Monad.Trans.List          as L
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:120:20: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+120 | instance MFunctor (E.ErrorT e) where
+    |                    ^^^^^^^^
+
+src/Control/Monad/Morph.hs:121:19: warning: [-Wdeprecations]
+    In the use of data constructor ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+121 |     hoist nat m = E.ErrorT (nat (E.runErrorT m))
+    |                   ^^^^^^^^
+
+src/Control/Monad/Morph.hs:121:34: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+121 |     hoist nat m = E.ErrorT (nat (E.runErrorT m))
+    |                                  ^^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:129:19: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ListT’
+    (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+129 | instance MFunctor L.ListT where
+    |                   ^^^^^^^
+
+src/Control/Monad/Morph.hs:130:19: warning: [-Wdeprecations]
+    In the use of data constructor ‘ListT’
+    (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+130 |     hoist nat m = L.ListT (nat (L.runListT m))
+    |                   ^^^^^^^
+
+src/Control/Monad/Morph.hs:130:33: warning: [-Wdeprecations]
+    In the use of ‘runListT’ (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+130 |     hoist nat m = L.ListT (nat (L.runListT m))
+    |                                 ^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:241:11: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+241 | instance (E.Error e) => MMonad (E.ErrorT e) where
+    |           ^^^^^^^
+
+src/Control/Monad/Morph.hs:241:33: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+241 | instance (E.Error e) => MMonad (E.ErrorT e) where
+    |                                 ^^^^^^^^
+
+src/Control/Monad/Morph.hs:242:17: warning: [-Wdeprecations]
+    In the use of data constructor ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+242 |     embed f m = E.ErrorT (do
+    |                 ^^^^^^^^
+
+src/Control/Monad/Morph.hs:243:14: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+243 |         x <- E.runErrorT (f (E.runErrorT m))
+    |              ^^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:243:30: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+243 |         x <- E.runErrorT (f (E.runErrorT m))
+    |                              ^^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:260:17: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ListT’
+    (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+260 | instance MMonad L.ListT where
+    |                 ^^^^^^^
+
+src/Control/Monad/Morph.hs:261:17: warning: [-Wdeprecations]
+    In the use of data constructor ‘ListT’
+    (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+261 |     embed f m = L.ListT (do
+    |                 ^^^^^^^
+
+src/Control/Monad/Morph.hs:262:14: warning: [-Wdeprecations]
+    In the use of ‘runListT’ (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+262 |         x <- L.runListT (f (L.runListT m))
+    |              ^^^^^^^^^^
+
+src/Control/Monad/Morph.hs:262:29: warning: [-Wdeprecations]
+    In the use of ‘runListT’ (imported from Control.Monad.Trans.List):
+    Deprecated: "This transformer is invalid on most monads"
+    |
+262 |         x <- L.runListT (f (L.runListT m))
+    |                             ^^^^^^^^^^
+[2 of 2] Compiling Control.Monad.Trans.Compose
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/mmorph-1.1.5-EldEc0HOhm81mxK29uEdqE
+Registering library for mmorph-1.1.5..

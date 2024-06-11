@@ -1,0 +1,23 @@
+Configuring ansi-wl-pprint-0.6.9...
+Preprocessing library for ansi-wl-pprint-0.6.9..
+Building library for ansi-wl-pprint-0.6.9..
+[1 of 2] Compiling Text.PrettyPrint.ANSI.Leijen.Internal
+
+Text/PrettyPrint/ANSI/Leijen/Internal.hs:34:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+   |
+34 | import Data.Monoid ((<>))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2 of 2] Compiling Text.PrettyPrint.ANSI.Leijen
+
+Text/PrettyPrint/ANSI/Leijen.hs:164:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+    |
+164 | import Data.Monoid ((<>))
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing library in /Users/mac/.stack/snapshots/x86_64-osx/ea679eb70176de93523b73a506000abb531db92a5eea8556abd1c3dfc4a953c8/8.10.7/lib/x86_64-osx-ghc-8.10.7/ansi-wl-pprint-0.6.9-84j7xkMFlNYBG1zxksVI1T
+Registering library for ansi-wl-pprint-0.6.9..
